@@ -516,7 +516,6 @@ h3 {
 }
 
 .project-media {
-  position: relative;
   overflow: hidden;
   border-radius: var(--radius-lg);
   border: 1px solid var(--line);
@@ -529,36 +528,24 @@ h3 {
   object-fit: cover;
 }
 
-.project-media--feature {
-  min-height: 19rem;
-  background: linear-gradient(180deg, color-mix(in srgb, var(--surface) 88%, transparent 12%), var(--surface-2));
+.project-media-stack {
+  display: grid;
+  gap: 1rem;
 }
 
-.project-media--feature > img:first-child {
-  height: 100%;
+.project-media--logo {
+  display: grid;
+  place-items: center;
+  min-height: 8rem;
+  padding: 1.25rem;
+  background: color-mix(in srgb, var(--surface) 92%, transparent 8%);
+}
+
+.project-media--logo img {
+  width: min(7rem, 50%);
+  height: auto;
   max-height: none;
-  min-height: 19rem;
-}
-
-.project-logo {
-  position: absolute;
-  right: 1rem;
-  bottom: 1rem;
-  width: 4.75rem;
-  height: 4.75rem;
-  max-height: none;
-  object-fit: cover;
-  border-radius: 1rem;
-  border: 1px solid var(--line-strong);
-  background: rgba(255, 255, 255, 0.96);
-  box-shadow: 0 18px 30px rgba(0, 0, 0, 0.18);
-}
-
-.project-logo--large {
-  width: 5.5rem;
-  height: 5.5rem;
   object-fit: contain;
-  padding: 0.4rem;
 }
 
 .skills-grid {
@@ -743,14 +730,8 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .project-logo {
-    width: 4.1rem;
-    height: 4.1rem;
-  }
-
-  .project-logo--large {
-    width: 4.75rem;
-    height: 4.75rem;
+  .project-media--logo {
+    min-height: 7rem;
   }
 
   .footer-inner {
