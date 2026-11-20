@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Rafael Maquin&eacute;, a Unity developer focused on gameplay systems, UI, debugging, optimization, tooling, and delivery.">
-  <meta name="theme-color" content="#f7f2ea">
-  <title>Rafael Maquin&eacute; | Unity Developer</title>
+  <meta name="description" content="Portfolio of Rafael Maquin&eacute; Lopes: Unity developer (4.5 years) and C#/.NET application developer working with AI-assisted development. Porto area, Portugal.">
+  <meta name="theme-color" content="#0d1620">
+  <title>Rafael Maquin&eacute; | Unity &amp; C#/.NET Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=Sora:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body data-theme="light">
+<body data-theme="dark">
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Rafael Maquine portfolio home">
@@ -25,12 +25,13 @@
       </button>
 
       <nav class="site-nav" id="site-nav">
+        <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
+        <a href="#ai">AI Workflow</a>
         <a href="#skills">Skills</a>
-        <a href="#mentoring">Mentoring</a>
-        <a href="#creative">Creative Work</a>
+        <a href="#creative">Creative</a>
         <a href="#contact">Contact</a>
-        <button class="theme-toggle" type="button" aria-pressed="false">Night Mode</button>
+        <button class="theme-toggle" type="button" aria-pressed="true">Light Mode</button>
         <a class="button button--small button--dark" href="assets/Rafael-Maquine-Resume.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
       </nav>
     </div>
@@ -40,115 +41,128 @@
     <section class="hero section">
       <div class="container hero-grid">
         <div class="hero-copy" data-reveal>
-          <p class="eyebrow">Unity Developer / Porto Area, Portugal</p>
-          <h1>Unity developer for gameplay systems, debugging, and clean implementation.</h1>
+          <p class="eyebrow">Unity Developer &middot; C#/.NET Developer &middot; Porto Area, Portugal</p>
+          <h1>Games, tools, and software that ship.</h1>
           <p class="lead">
-            I work across gameplay systems, UI, optimization, tools, and production support. I'm comfortable in different team sizes, from solo work to teams of around 60, and I can jump into existing projects without slowing them down.
+            4.5 years of Unity development across WebGL learning platforms, mobile games and an indie roguelike. Since 2026 I also build C#/.NET desktop software for a school, in production, using AI-assisted development.
           </p>
           <p class="body-text">
-            What I bring most is turning messy requirements into stable, shippable work. I like working closely with designers and artists, and I'm used to Git, Bitbucket, Scrum, and Kanban workflows.
+            I take over unfinished projects and get them out the door, fix what blocks a release, and turn requirements from non-technical people into working features.
           </p>
 
           <div class="hero-actions">
-            <a class="button button--dark" href="#projects">View Projects</a>
-            <a class="button button--accent" href="assets/Rafael-Maquine-Resume.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
+            <a class="button button--accent" href="#experience">See my work</a>
+            <a class="button" href="https://www.linkedin.com/in/rafamaq/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
 
           <div class="hero-chips">
-            <span>Unity 2D and 3D</span>
+            <span>Unity</span>
             <span>C#</span>
-            <span>Gameplay Systems</span>
-            <span>UI / UGUI</span>
-            <span>Optimization</span>
-            <span>Git / Bitbucket</span>
+            <span>.NET</span>
+            <span>Avalonia</span>
+            <span>WebGL</span>
+            <span>Android / iOS</span>
+            <span>FMOD</span>
+            <span>AI-assisted development</span>
           </div>
         </div>
 
         <aside class="hero-panel" data-reveal>
-          <div class="hero-panel__block">
-            <p class="panel-label">Why teams hire me</p>
-            <ul class="simple-list">
-              <li>Comfortable working solo or inside established pipelines</li>
-              <li>Used to Git, Bitbucket, Scrum, and Kanban workflows</li>
-              <li>Strong on debugging, bug fixing, and production support</li>
-              <li>Can also help with mentoring, tooling, audio, and creative work when needed</li>
-            </ul>
-          </div>
-
-          <div class="hero-panel__highlights">
-            <p class="panel-label">Recent Impact</p>
-            <ul class="impact-list">
-              <li><strong>Neuropal:</strong> reduced a mobile build from 359 MB to 170 MB while handling fixes, content updates, and publishing work</li>
-              <li><strong>FakeDoor:</strong> built internal tools and reusable templates to support less experienced teammates and more scalable production</li>
-              <li><strong>Ludus / Saltu:</strong> led a team of 5 developers inside a team of more than 20 people</li>
-            </ul>
-          </div>
+          <p class="panel-label">At a glance</p>
+          <dl class="glance-list">
+            <div><dt>Based in</dt><dd>Matosinhos, Porto area, Portugal</dd></div>
+            <div><dt>Work</dt><dd>Remote, hybrid, or relocation</dd></div>
+            <div><dt>Authorization</dt><dd>Portuguese citizen (EU)</dd></div>
+            <div><dt>Languages</dt><dd>Portuguese (native) &middot; English (C1) &middot; Spanish (B2) &middot; Japanese (B1) &middot; French (A2)</dd></div>
+            <div><dt>Looking for</dt><dd>Mid-level Unity or C#/.NET roles</dd></div>
+          </dl>
         </aside>
       </div>
     </section>
 
-    <section class="section section--compact">
+    <section class="section section--compact" aria-label="Results in numbers">
       <div class="container">
-        <div class="proof-grid">
-          <article class="proof-card proof-card--teal" data-reveal>
-            <p class="panel-label">Delivery</p>
-            <h3>Ownership without drama.</h3>
-            <p class="body-text">I can own features, clean up unstable systems, and help carry projects through the harder parts of production.</p>
+        <div class="metric-grid">
+          <article class="metric-card" data-reveal>
+            <p class="metric-value">~2 weeks &rarr; ~2 h</p>
+            <p class="metric-label">Time for a school to build its timetables, after Cronos AD replaced the manual process</p>
           </article>
-
-          <article class="proof-card proof-card--coral" data-reveal>
-            <p class="panel-label">Scalability</p>
-            <h3>Reusable systems over repetitive work.</h3>
-            <p class="body-text">I look for ways to make projects easier to maintain, using editor tools, reusable templates, or more scalable code.</p>
+          <article class="metric-card" data-reveal>
+            <p class="metric-value">390 lessons in 1.7 s</p>
+            <p class="metric-label">Weekly lesson blocks scheduled for 46 teachers, 20 classes and 16 subjects</p>
           </article>
-
-          <article class="proof-card proof-card--blue" data-reveal>
-            <p class="panel-label">Team Fit</p>
-            <h3>Technical and easy to work with.</h3>
-            <p class="body-text">I communicate clearly and work well with designers, artists, QA, and junior developers in fast-moving environments.</p>
+          <article class="metric-card" data-reveal>
+            <p class="metric-value">359 &rarr; 170 MB</p>
+            <p class="metric-label">Mobile build size of Neuropal, before publishing on the App Store and Google Play</p>
+          </article>
+          <article class="metric-card" data-reveal>
+            <p class="metric-value">~8 s &rarr; ~2 s</p>
+            <p class="metric-label">Initial load of a WebGL learning platform after moving content to streamed Addressables</p>
           </article>
         </div>
+        <p class="footnote">Figures with ~ are estimates from the time; the others come from recorded runs or builds.</p>
       </div>
     </section>
 
-    <section class="section" id="projects">
+    <section class="section" id="experience">
       <div class="container">
         <div class="section-heading" data-reveal>
-          <p class="eyebrow">Selected Projects</p>
-          <h2>Selected Projects</h2>
+          <p class="eyebrow">Experience</p>
+          <h2>Where I've worked, and what I did there</h2>
         </div>
 
-        <div class="project-list">
-          <article class="project-card" data-reveal>
-            <div class="project-head">
+        <div class="timeline">
+          <article class="role-card role-card--net" data-reveal>
+            <header class="role-head">
               <div>
-                <p class="panel-label">FakeDoor</p>
+                <p class="panel-label">Freelance &middot; Remote</p>
+                <h3>Freelance Software Developer (C#/.NET)</h3>
+                <p class="role-org">Cronos AD &middot; private school in Brazil</p>
+              </div>
+              <p class="role-dates">01/2026 &ndash; present</p>
+            </header>
+            <p class="body-text">
+              Sole developer of a desktop suite for a school, with the school manager defining what it needs. Cronos AD generates the school's timetables and formal schedule documents and is used by its staff. I own the technical side end to end: features, architecture, testing and releases. Claude writes most of the code; I decide what gets built, how it fits together, and whether it works.
+            </p>
+            <ul class="simple-list">
+              <li>Delivered a constraint-based timetable generator that scheduled 390 weekly lesson blocks for 46 teachers, 20 classes and 16 subjects in 1.7 s on the school's real data</li>
+              <li>Took the school's timetabling from about two weeks of manual work to about two hours</li>
+              <li>Delivered preflight checks that flag contradictory rules before generation, manual editing with live rule validation, per-teacher workload analytics, and Excel, PNG and PDF exports</li>
+              <li>Decided and directed the migration of the UI from Windows Forms to Avalonia</li>
+              <li>Ships signed releases through GitHub with an in-app auto-updater, backed by an automated MSTest suite</li>
+            </ul>
+            <div class="project-tags">
+              <span>C# / .NET 8</span><span>Avalonia</span><span>SQLite</span><span>MSTest</span><span>Claude Code</span>
+            </div>
+          </article>
+
+          <article class="role-card" data-reveal>
+            <header class="role-head">
+              <div>
+                <p class="panel-label">Employee &middot; Remote (UK)</p>
                 <div class="project-title-row">
                   <img class="project-title-mark" src="assets/fakedoor-logo.jpg" alt="FakeDoor logo">
-                  <h3>Interactive Learning Platform / WebGL</h3>
+                  <div>
+                    <h3>Mid-level Unity Developer</h3>
+                    <p class="role-org">FakeDoor &middot; 3D learning platform for schools (WebGL)</p>
+                  </div>
                 </div>
               </div>
-              <div class="project-tags">
-                <span>WebGL</span>
-                <span>Tooling</span>
-                <span>Scalability</span>
-              </div>
-            </div>
+              <p class="role-dates">03/2024 &ndash; 02/2025</p>
+            </header>
             <div class="project-layout">
               <div>
                 <p class="body-text">
-                  Worked on a WebGL-based interactive learning platform where performance, reusable systems, and team support mattered. A lot of the project was repetitive, so I pushed toward more scalable and reusable approaches instead of one-off implementation.
+                  Second developer in a Unity team of four (a lead, me, two juniors), building interactive 3D lessons for the browser alongside an art team and a teacher who wrote the content.
                 </p>
-                <p class="impact-line"><strong>Impact:</strong> improved team scalability through internal tools, reusable templates, and cleaner production patterns.</p>
                 <ul class="simple-list">
-                  <li>Built Unity Editor tools to help less experienced teammates work more effectively</li>
-                  <li>Helped structure reusable templates and scalable code for repetitive production work</li>
-                  <li>Developed responsive UI systems for multiple screen sizes</li>
-                  <li>Optimized performance for WebGL builds</li>
-                  <li>Created and implemented sound effects and music by suggestion and initiative</li>
-                  <li>Mentored junior developers and reviewed their work</li>
-                  <li>Managed and reorganized a repository with over 40 branches</li>
-                  <li>Implemented shader work for readability and interaction</li>
+                  <li>Researched Addressables and co-implemented, with the Unity lead, content streaming from Azure: a light loading scene first, the rest in the background. Initial load went from about 8 s to about 2 s</li>
+                  <li>Built a Unity Editor tool that let the non-programmer teacher write formatted TextMeshPro content directly, removing the developers' manual conversion from Word</li>
+                  <li>On joining, resolved conflicts and consolidated 40+ scattered project branches into a main and a legacy branch</li>
+                  <li>Found mis-compressed textures and sprites with the Unity Profiler and fixed their import settings to cut build size and memory use</li>
+                  <li>Diagnosed broken art-team models in Blender, built Shader Graph shaders, and walked the artists through the fixes</li>
+                  <li>Reviewed the two junior developers' code and coached them on what the reviews found</li>
+                  <li>Produced the platform's sound effects and music</li>
                 </ul>
                 <p class="project-note">Product under NDA.</p>
               </div>
@@ -158,32 +172,62 @@
             </div>
           </article>
 
-          <article class="project-card" data-reveal>
-            <div class="project-head">
+          <article class="role-card" data-reveal>
+            <header class="role-head">
               <div>
-                <p class="panel-label">Gentleman Rat Studios</p>
-                <h3>Critter Cove</h3>
+                <p class="panel-label">Contract &middot; Portugal</p>
+                <div class="project-title-row">
+                  <img class="project-title-mark" src="assets/neuropal-logo.png" alt="Neuropal logo">
+                  <div>
+                    <h3>Unity Developer</h3>
+                    <p class="role-org">Neuropal &middot; Associa&ccedil;&atilde;o Viver a Ci&ecirc;ncia, with Instituto de Medicina Molecular</p>
+                  </div>
+                </div>
               </div>
-              <div class="project-tags">
-                <span>Debugging</span>
-                <span>Gameplay Support</span>
-                <span>Git</span>
-              </div>
-            </div>
+              <p class="role-dates">07/2022 &ndash; 07/2023</p>
+            </header>
             <div class="project-layout">
               <div>
                 <p class="body-text">
-                  Contributed during production on Critter Cove, a cozy open-world life sim and town builder. My work was concentrated in bug hunting, bug fixing, build review, and helping unblock technical issues during a short production cycle.
+                  A free educational game about safety and the nervous system, made to help young players avoid spinal cord injuries, in English, Spanish and Portuguese. I took it over from the previous contractor as the only programmer: unpublished, with bugs, and with the original developers gone.
                 </p>
-                <p class="impact-line"><strong>Impact:</strong> helped the team move faster by finding, fixing, and unblocking gameplay and version-control issues during production.</p>
                 <ul class="simple-list">
-                  <li>Tracked down and fixed gameplay bugs based on tester feedback</li>
-                  <li>Reviewed builds and performance issues</li>
-                  <li>Helped resolve Git merge problems during development</li>
-                  <li>Implemented a procedural speech system for characters</li>
+                  <li>Fixed what blocked the release: crashes, broken puzzles and collisions, levels that could not be finished, unfinished features</li>
+                  <li>Cut the build from 359 MB to 170 MB by compressing and resizing oversized textures, including one sprite of about 40 MB</li>
+                  <li>Published it on the App Store and Google Play, handling accounts, submissions, listings and review</li>
+                  <li>Maintained the Firebase user database during testing</li>
                 </ul>
                 <div class="project-actions">
-                  <a class="text-link" href="https://store.steampowered.com/app/1631470/Critter_Cove/" target="_blank" rel="noopener noreferrer">Open Steam page</a>
+                  <a class="text-link" href="https://neuro-pal.org/index.php?lc=en" target="_blank" rel="noopener noreferrer">Project page (credits: additional programming)</a>
+                </div>
+              </div>
+              <div class="project-media">
+                <img src="assets/neuropal-background.jpg" alt="Neuropal artwork">
+              </div>
+            </div>
+          </article>
+
+          <article class="role-card" data-reveal>
+            <header class="role-head">
+              <div>
+                <p class="panel-label">Contract &middot; Portugal</p>
+                <h3>Unity Developer</h3>
+                <p class="role-org">Gentleman Rat Studios &middot; Critter Cove</p>
+              </div>
+              <p class="role-dates">04/2023 &ndash; 09/2023</p>
+            </header>
+            <div class="project-layout">
+              <div>
+                <p class="body-text">
+                  One of two developers on Critter Cove, an open-world life sim and town builder, during pre-release development. The game later entered Early Access on Steam.
+                </p>
+                <ul class="simple-list">
+                  <li>Hunted down and fixed bugs across the codebase</li>
+                  <li>Built a procedural speech system that turns dialogue text into character babble, with my own sound effects</li>
+                  <li>Recovered the project by rolling back through its Git history when a problem hit</li>
+                </ul>
+                <div class="project-actions">
+                  <a class="text-link" href="https://store.steampowered.com/app/1631470/Critter_Cove/" target="_blank" rel="noopener noreferrer">Steam page</a>
                 </div>
               </div>
               <div class="project-media">
@@ -192,114 +236,142 @@
             </div>
           </article>
 
-          <article class="project-card" data-reveal>
-            <div class="project-head">
+          <article class="role-card" data-reveal>
+            <header class="role-head">
               <div>
-                <p class="panel-label">Associacao Viver a Ciencia / UPorto</p>
-                <div class="project-title-row">
-                  <img class="project-title-mark" src="assets/neuropal-logo.png" alt="Neuropal logo">
-                  <h3>Neuropal Mobile Project</h3>
-                </div>
-              </div>
-              <div class="project-tags">
-                <span>Mobile</span>
-                <span>Optimization</span>
-                <span>Publishing</span>
-              </div>
-            </div>
-            <div class="project-layout">
-              <div>
-                <p class="body-text">
-                  Maintained and improved a Unity application published on iOS and Android. This was one of the strongest examples of independent ownership in my experience: I helped move a previously started project forward, stabilized it, and supported it through optimization and publishing.
-                </p>
-                <p class="impact-line"><strong>Impact:</strong> reduced build size from 359 MB to 170 MB while fixing gameplay, collision, and publishing-related issues.</p>
-                <ul class="simple-list">
-                  <li>Fixed bugs across collisions, game logic, gameplay, build settings, UI, animation, audio, and data</li>
-                  <li>Reduced build size from 359 MB to 170 MB</li>
-                  <li>Maintained and extended features across the app</li>
-                  <li>Managed publishing requirements for iOS and Android</li>
-                  <li>Handled Firebase content and data updates</li>
-                </ul>
-                <a class="text-link" href="https://neuro-pal.org/index.php?lc=en" target="_blank" rel="noopener noreferrer">Visit project page</a>
-              </div>
-              <div class="project-media-stack">
-                <div class="project-media">
-                  <img src="assets/neuropal-background.jpg" alt="Neuropal background artwork">
-                </div>
-              </div>
-            </div>
-          </article>
-
-          <article class="project-card" data-reveal>
-            <div class="project-head">
-              <div>
-                <p class="panel-label">Ludus / Saltu</p>
+                <p class="panel-label">Research fellowship &middot; Manaus, Brazil</p>
                 <div class="project-title-row">
                   <img class="project-title-mark" src="assets/ludus-logo.jpg" alt="Ludus logo">
-                  <h3>Games, Prototypes, and Team Leadership</h3>
+                  <div>
+                    <h3>Unity Developer &amp; Research Fellow</h3>
+                    <p class="role-org">Saltu (previously Ludus) &middot; corporate-funded R&amp;D game lab</p>
+                  </div>
                 </div>
               </div>
-              <div class="project-tags">
-                <span>20+ people</span>
-                <span>Leadership</span>
-                <span>FMOD</span>
-              </div>
-            </div>
+              <p class="role-dates">11/2019 &ndash; 01/2022</p>
+            </header>
             <p class="body-text">
-              Worked across multiple Unity projects in a larger team environment, including prototypes, full games, audio implementation, architecture discussions, and leadership responsibilities.
+              A lab of more than 20 people (researchers, developers, artists) funded by a large company from the Manaus Industrial Pole that was entering the mobile-phone market. We built games and tested them on the sponsor's phones and other devices.
             </p>
-            <p class="impact-line"><strong>Impact:</strong> combined hands-on Unity implementation with leadership, mentoring, and audio support inside a 20+ person team.</p>
             <ul class="simple-list">
-              <li>Developed gameplay systems and UI features</li>
-              <li>Prototyped systems and contributed to architecture design</li>
-              <li>Led a team of 5 developers within a team of more than 20 people</li>
-              <li>Implemented audio systems using FMOD</li>
-              <li>Worked with designers and artists on features and cutscenes</li>
-              <li>Taught beginners through courses and internal knowledge sharing</li>
-              <li>Contributed music and sound design work in addition to programming</li>
+              <li>Built mechanics, UI and menus, cutscenes and audio for the sponsor's two main games, a puzzle platformer and a domino-style game, and prototyped mechanics for both</li>
+              <li>Managed two musicians, one per game: wrote the audio briefs, assigned tasks and reviewed their work; integrated all of the audio with FMOD</li>
+              <li>Led a team of 5 developers in a 2-month internal game jam and delivered a complete puzzle game on the original deadline while other teams needed extensions</li>
+              <li>Built and tested on Android devices almost daily</li>
             </ul>
-            <p class="project-note">Some of these projects are protected by NDA, so the details here are intentionally broad.</p>
+            <p class="project-note">Sponsor and games under NDA.</p>
           </article>
+        </div>
+      </div>
+    </section>
 
-          <article class="project-card project-card--supporting" data-reveal>
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Projects</p>
+          <h2>Built outside of work</h2>
+        </div>
+
+        <div class="project-list">
+          <article class="project-card" data-reveal>
             <div class="project-head">
               <div>
-                <p class="panel-label">Current Personal / Collaborative Project</p>
-                <div class="project-title-row">
-                  <img class="project-title-mark" src="assets/chasers-logo.jpg" alt="Chasers logo">
-                  <h3>N.R.Cheese / Chasers</h3>
-                </div>
+                <p class="panel-label">Personal &middot; 2026 &middot; Windows and Android</p>
+                <h3>Tonnetz</h3>
               </div>
               <div class="project-tags">
-                <span>Unity</span>
-                <span>Solo dev currently</span>
-                <span>In progress</span>
+                <span>.NET 10</span><span>Avalonia 12</span><span>Audio</span><span>AI-assisted</span>
               </div>
             </div>
             <div class="project-layout">
               <div>
                 <p class="body-text">
-                  Chasers is a collaborative game project with friends where I am currently the only active developer. I keep it below the studio work here because it is personal, but it is still useful as proof of initiative, technical range, and ownership.
+                  A chord, scale and harmony app for guitar, bass and piano, running on Windows and Android from one codebase. It replaces an older web tool of mine that had chord shapes typed in by hand; here every chord, shape and voicing is computed from intervals.
                 </p>
-                <p class="impact-line"><strong>Impact:</strong> demonstrates solo ownership across gameplay, animation systems, shaders, AI, and reusable runtime systems.</p>
                 <ul class="simple-list">
-                  <li>Implemented IK animation and procedural animation systems</li>
-                  <li>Built shader work and visual effects</li>
-                  <li>Implemented AI using NavMesh</li>
-                  <li>Used object pooling and reusable gameplay patterns</li>
-                  <li>Supported the project with sound and music work as well</li>
+                  <li>Chord diagrams for guitar and bass, piano voicings, and a circle of fifths</li>
+                  <li>I set the UX rules: the main screen never scrolls and nothing overlaps, on desktop, tablet or phone</li>
+                  <li>Those rules are enforced by an automated layout-audit test that renders every screen at 10 window sizes</li>
+                  <li>Built with Claude: I wrote the requirements, directed the work and tested every build</li>
                 </ul>
-                <div class="link-row">
-                  <a class="text-link" href="https://nrcheese.itch.io/chasers-nrcheese" target="_blank" rel="noopener noreferrer">Open itch.io page</a>
-                  <a class="text-link" href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7381695833571840000?compact=1" target="_blank" rel="noopener noreferrer">Open development post</a>
-                  <a class="text-link" href="https://www.linkedin.com/embed/feed/update/urn:li:share:7403717715187769344?collapsed=1" target="_blank" rel="noopener noreferrer">Open showcase post</a>
+                <div class="project-actions">
+                  <a class="text-link" href="https://github.com/LeMaq/Tonnetz" target="_blank" rel="noopener noreferrer">Source on GitHub</a>
                 </div>
-                <p class="project-note">The itch.io page is currently restricted, so I'm linking it instead of embedding a broken playable block.</p>
               </div>
-              <div class="project-media">
-                <img src="assets/chasers-screenshot.png" alt="Chasers project screenshot">
+              <div class="media-pair">
+                <div class="project-media"><img src="assets/tonnetz-desktop.png" alt="Tonnetz desktop layout with progression, guitar shape, piano and theory panel"></div>
+                <div class="project-media project-media--phone"><img src="assets/tonnetz-phone.png" alt="Tonnetz phone layout"></div>
               </div>
             </div>
+          </article>
+
+          <article class="project-card" data-reveal>
+            <div class="project-head">
+              <div>
+                <p class="panel-label">Indie &middot; 2025 &ndash; present &middot; Unity</p>
+                <div class="project-title-row">
+                  <img class="project-title-mark" src="assets/chasers-logo.jpg" alt="Chasers logo">
+                  <h3>N.R.Cheese</h3>
+                </div>
+              </div>
+              <div class="project-tags">
+                <span>Unity</span><span>Roguelike</span><span>Sole programmer</span><span>In development</span>
+              </div>
+            </div>
+            <div class="project-layout">
+              <div>
+                <p class="body-text">
+                  An isometric twin-stick bullet-hell roguelike about crazy mice and their tanks, made with a 3D artist and creative director under the team name Chasers. I write all of the code.
+                </p>
+                <ul class="simple-list">
+                  <li>MVP systems: 8-directional movement, shooting, dash, pickups, health, knockback, a level of 8 rooms, a boss, and six menus</li>
+                  <li>Enemy AI that chases and shoots the player (NavMesh)</li>
+                  <li>VFX, custom shaders, IK and procedural animation, object pooling</li>
+                </ul>
+                <div class="link-row">
+                  <a class="text-link" href="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:7381695833571840000?compact=1" target="_blank" rel="noopener noreferrer">Development post</a>
+                  <a class="text-link" href="https://www.linkedin.com/embed/feed/update/urn:li:share:7403717715187769344?collapsed=1" target="_blank" rel="noopener noreferrer">Showcase post</a>
+                </div>
+                <p class="project-note">Playable build not public yet.</p>
+              </div>
+              <div class="project-media">
+                <img src="assets/chasers-screenshot.png" alt="N.R.Cheese gameplay screenshot">
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="ai">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">AI Workflow</p>
+          <h2>How I build with AI</h2>
+          <p class="body-text body-text--narrow">
+            Cronos AD and Tonnetz were built with Claude writing most of the code. That only works with a process around it, so this is mine.
+          </p>
+        </div>
+        <div class="step-grid">
+          <article class="step-card" data-reveal>
+            <p class="step-num">01</p>
+            <h3>Specify</h3>
+            <p class="body-text">I brief Claude with the client's own words plus my requirements, and get UI mockups before any feature is built.</p>
+          </article>
+          <article class="step-card" data-reveal>
+            <p class="step-num">02</p>
+            <h3>Decide</h3>
+            <p class="body-text">Architecture and direction are my calls, such as moving Cronos AD from Windows Forms to Avalonia.</p>
+          </article>
+          <article class="step-card" data-reveal>
+            <p class="step-num">03</p>
+            <h3>Reject</h3>
+            <p class="body-text">Output that misses the design goes back: overlapping UI, a scrolling main screen. Some rules become automated tests so they can't regress.</p>
+          </article>
+          <article class="step-card" data-reveal>
+            <p class="step-num">04</p>
+            <h3>Verify</h3>
+            <p class="body-text">I test every build on real data, run the unit tests, and publish to the client, who tests again before use.</p>
           </article>
         </div>
       </div>
@@ -309,83 +381,80 @@
       <div class="container">
         <div class="section-heading" data-reveal>
           <p class="eyebrow">Skills</p>
+          <h2>What I use, and where</h2>
         </div>
 
         <div class="skills-grid" data-reveal>
           <article class="skill-card">
-            <h3>Core Development</h3>
+            <h3>Unity</h3>
             <ul class="simple-list simple-list--tight">
-              <li>Unity 2D and 3D</li>
-              <li>C# programming</li>
-              <li>Gameplay systems development</li>
-              <li>UI / UGUI implementation</li>
-              <li>Game logic and mechanics</li>
-              <li>Animation scripting, procedural animation, and IK animation</li>
+              <li>C#, gameplay systems, enemy AI (NavMesh), prototyping</li>
+              <li>uGUI, TextMeshPro, Unity Editor tools</li>
+              <li>Addressables, WebGL, Android and iOS publishing</li>
+              <li>Unity Profiler, texture and build-size optimization</li>
+              <li>Shader Graph, VFX, IK and procedural animation</li>
             </ul>
           </article>
 
           <article class="skill-card">
-            <h3>Engineering and Production</h3>
+            <h3>C# / .NET</h3>
             <ul class="simple-list simple-list--tight">
-              <li>Debugging and bug fixing</li>
-              <li>Performance optimization, including WebGL</li>
-              <li>Large codebase maintenance</li>
-              <li>System design and prototyping</li>
-              <li>Build optimization and publishing</li>
-              <li>Unity Editor tooling</li>
+              <li>.NET 8 and 10, Avalonia (MVVM), Windows Forms</li>
+              <li>SQLite, MSTest, xUnit</li>
+              <li>Windows and Android apps from one codebase</li>
+              <li>Signed releases and auto-updates via GitHub Releases</li>
+              <li>AI-assisted development with Claude Code</li>
             </ul>
           </article>
 
           <article class="skill-card">
-            <h3>Workflow and Collaboration</h3>
+            <h3>Team and process</h3>
             <ul class="simple-list simple-list--tight">
-              <li>Git / Bitbucket, including merge conflict resolution</li>
-              <li>Agile methodologies, Scrum and Kanban</li>
-              <li>Cross-functional teamwork</li>
-              <li>Clear communication with designers, artists, and developers</li>
-              <li>Working independently when needed</li>
-              <li>Mentoring and code review</li>
+              <li>Git, Bitbucket, GitHub: merge conflicts, branch consolidation, history recovery</li>
+              <li>Scrum with Jira or Trello</li>
+              <li>Code review and coaching junior developers</li>
+              <li>Leading a small team; briefing and reviewing musicians</li>
+              <li>Explaining technical problems to artists, teachers and clients</li>
             </ul>
           </article>
 
           <article class="skill-card">
-            <h3>Audio and Visual</h3>
+            <h3>Audio and art</h3>
             <ul class="simple-list simple-list--tight">
               <li>FMOD integration</li>
-              <li>Audio systems, SFX design, and mixing</li>
-              <li>Shader Graph and shader implementation</li>
-              <li>2D / 3D asset integration</li>
-              <li>Mobile, WebGL, and PC pipelines</li>
+              <li>Sound effects and music: Ableton Live, Adobe Audition, Audacity</li>
+              <li>Blender for game assets and model fixes</li>
+              <li>Adobe Photoshop and Piskel for 2D and pixel art</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="mentoring">
+    <section class="section" id="teaching">
       <div class="container">
         <div class="section-heading" data-reveal>
-          <p class="eyebrow">Mentoring and Teaching</p>
-          <h2>Mentoring and Teaching</h2>
+          <p class="eyebrow">Teaching and Mentoring</p>
+          <h2>Explaining things to people who aren't me</h2>
         </div>
 
         <div class="teaching-grid">
           <article class="teaching-card teaching-card--teal" data-reveal>
             <p class="panel-label">FakeDoor</p>
-            <h3>Mentoring junior developers</h3>
-            <p class="body-text">Supported junior teammates with feedback, review, and day-to-day guidance so they could contribute more confidently.</p>
+            <h3>Code reviews for junior developers</h3>
+            <p class="body-text">Reviewed the two juniors' work and coached them on the issues the reviews turned up.</p>
           </article>
 
           <article class="teaching-card teaching-card--gold" data-reveal>
-            <p class="panel-label">Ludus / Saltu</p>
-            <h3>Teaching beginners through courses</h3>
-            <p class="body-text">Helped teach beginners and share practical development knowledge inside a team environment with collaborative learning and internal jams.</p>
+            <p class="panel-label">LCD Porto</p>
+            <h3>Beginner Unity workshops</h3>
+            <p class="body-text">Taught two beginner sessions at <a href="https://lcdporto.org/pt/pagina-principal/" target="_blank" rel="noopener noreferrer">LCD Porto</a> to adults and children, including autistic learners: projects, scripts, sprites and settings.</p>
           </article>
 
           <article class="teaching-card teaching-card--blue" data-reveal>
-            <p class="panel-label">LCD Porto</p>
-            <h3>Community teaching outside work</h3>
-            <p class="body-text">Outside studio roles, I also taught beginners through courses at <a href="https://lcdporto.org/pt/pagina-principal/" target="_blank" rel="noopener noreferrer">LCD Porto</a>.</p>
+            <p class="panel-label">FakeDoor</p>
+            <h3>Showing, not arguing</h3>
+            <p class="body-text">When an artist pushed back on a model problem I'd found, I demonstrated it in Blender. The model was fixed and the shader worked.</p>
           </article>
         </div>
       </div>
@@ -394,22 +463,17 @@
     <section class="section" id="creative">
       <div class="container">
         <div class="section-heading" data-reveal>
-          <p class="eyebrow">Creative Range</p>
-          <h2>Creative Work</h2>
+          <p class="eyebrow">Creative Work</p>
+          <h2>3D and music</h2>
           <p class="body-text body-text--narrow">
-            This is supporting material, but it helps show how I work with artists, audio people, and smaller multidisciplinary teams.
+            Side skills, and the reason I can talk to artists and audio people in their own terms.
           </p>
         </div>
 
         <div class="creative-grid">
           <article class="creative-card" data-reveal>
-            <div class="creative-card__head">
-              <div>
-                <p class="panel-label">3D Modeling</p>
-                <h3>Blender and asset work</h3>
-              </div>
-            </div>
-            <p class="body-text">Blender is one of my strongest side skills. It helps me understand art production more deeply and contribute more effectively in multidisciplinary environments.</p>
+            <p class="panel-label">3D Modeling</p>
+            <h3>Blender</h3>
             <div class="model-grid">
               <a class="model-card" href="https://drive.google.com/file/d/1NfvJmmPQrVHW4-c-uTV91i6fPXS8zhDC/view?usp=drivesdk" target="_blank" rel="noopener noreferrer">
                 <img src="https://drive.google.com/thumbnail?id=1NfvJmmPQrVHW4-c-uTV91i6fPXS8zhDC&sz=w1000" alt="Daf-beePunk artwork">
@@ -425,26 +489,22 @@
               </a>
             </div>
             <div class="project-actions">
-              <a class="text-link" href="https://drive.google.com/drive/folders/1C4DsdpQeA3gx_ohHvrVKepi_QcZyuy7J?usp=sharing" target="_blank" rel="noopener noreferrer">Open full gallery</a>
+              <a class="text-link" href="https://drive.google.com/drive/folders/1C4DsdpQeA3gx_ohHvrVKepi_QcZyuy7J?usp=sharing" target="_blank" rel="noopener noreferrer">Full gallery</a>
             </div>
           </article>
 
           <article class="creative-card" data-reveal>
-            <div class="creative-card__head">
-              <div>
-                <p class="panel-label">Music and Audio</p>
-                <h3>Music, sound design, and implementation</h3>
-              </div>
-            </div>
-            <p class="body-text">I also work in music and sound design. That has been useful in FakeDoor, N.R.Cheese, and Ludus, where I contributed audio-related work alongside programming.</p>
+            <p class="panel-label">Music and Audio</p>
+            <h3>Music and sound design</h3>
+            <p class="body-text">Sound effects and music for FakeDoor and the Critter Cove speech system, audio direction and FMOD integration at Saltu, plus my own releases.</p>
             <div class="creative-links">
-              <a class="button" href="https://open.spotify.com/artist/06V6gdDf4zZHZzMwX73lz7?si=c22d44c5fc2a411e" target="_blank" rel="noopener noreferrer">Open Spotify</a>
+              <a class="button" href="https://open.spotify.com/artist/06V6gdDf4zZHZzMwX73lz7?si=c22d44c5fc2a411e" target="_blank" rel="noopener noreferrer">Spotify</a>
               <a class="button" href="https://drive.google.com/drive/folders/1RrAdyoFCjHV8AiNZlPRx6OBH50c62y-S" target="_blank" rel="noopener noreferrer">AbyssStare</a>
-              <a class="button" href="https://drive.google.com/drive/folders/1pMQ-xO4ug6fnwaJIpqgmbPtd0KNlWj5d" target="_blank" rel="noopener noreferrer">Chasers-Demo</a>
+              <a class="button" href="https://drive.google.com/drive/folders/1pMQ-xO4ug6fnwaJIpqgmbPtd0KNlWj5d" target="_blank" rel="noopener noreferrer">Chasers demo</a>
               <a class="button" href="https://drive.google.com/drive/folders/1tz6pFv7hPNhKNOBVUKLQrYK4i8c3DUW3" target="_blank" rel="noopener noreferrer">FakeDoor</a>
             </div>
             <div class="project-actions">
-              <a class="text-link" href="https://drive.google.com/drive/folders/1O-1Ude9cyMhXYUn_mOuPp8sgpkLkVM9P?usp=sharing" target="_blank" rel="noopener noreferrer">Open music portfolio</a>
+              <a class="text-link" href="https://drive.google.com/drive/folders/1O-1Ude9cyMhXYUn_mOuPp8sgpkLkVM9P?usp=sharing" target="_blank" rel="noopener noreferrer">Music portfolio</a>
             </div>
           </article>
         </div>
@@ -455,14 +515,15 @@
       <div class="container">
         <div class="contact-panel" data-reveal>
           <p class="eyebrow">Contact</p>
-          <h2>Available for Unity roles where strong ownership, debugging, systems thinking, and team collaboration matter.</h2>
+          <h2>Looking for a mid-level Unity or C#/.NET role.</h2>
           <p class="body-text body-text--narrow">
-            If you need someone who can implement systems, solve production bugs, and work well with a team, I'd be glad to talk.
+            Remote, hybrid in the Porto area, or relocation within Europe or to Japan. Happy to talk.
           </p>
           <div class="contact-actions">
             <a class="button button--dark" href="mailto:rafaelmaquinelopes@gmail.com">rafaelmaquinelopes@gmail.com</a>
             <a class="button button--accent" href="tel:+351926120222">+351 926 120 222</a>
             <a class="button" href="https://www.linkedin.com/in/rafamaq/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a class="button" href="https://github.com/LeMaq" target="_blank" rel="noopener noreferrer">GitHub</a>
             <a class="button" href="assets/Rafael-Maquine-Resume.pdf" target="_blank" rel="noopener noreferrer">Download CV</a>
           </div>
         </div>
@@ -473,7 +534,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>Rafael Maquin&eacute; Lopes</p>
-      <p>Unity Developer focused on gameplay, systems, debugging, optimization, and delivery</p>
+      <p>Unity &amp; C#/.NET Developer &middot; Porto Area, Portugal</p>
     </div>
   </footer>
 

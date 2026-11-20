@@ -34,8 +34,7 @@ const applyTheme = (theme) => {
 };
 
 const storedTheme = window.localStorage.getItem("portfolio-theme");
-const preferredDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-const initialTheme = storedTheme || (preferredDark ? "dark" : "light");
+const initialTheme = storedTheme || "dark";
 applyTheme(initialTheme);
 
 if (themeToggle) {

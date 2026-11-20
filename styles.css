@@ -765,3 +765,245 @@ h3 {
     animation-iteration-count: 1 !important;
   }
 }
+
+/* ---- Revamp 2026-11: glance list, metrics, experience timeline, AI steps ---- */
+
+.hero-panel .panel-label {
+  margin-bottom: 1.1rem;
+}
+
+.glance-list {
+  display: grid;
+  gap: 0.95rem;
+  margin: 0;
+}
+
+.glance-list div {
+  display: grid;
+  gap: 0.2rem;
+  padding-bottom: 0.95rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.glance-list div:last-child {
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.glance-list dt {
+  color: var(--ink-muted);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.glance-list dd {
+  margin: 0;
+  color: var(--ink);
+  line-height: 1.55;
+}
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.metric-card {
+  padding: 1.3rem 1.25rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow);
+}
+
+.metric-card:nth-child(1) { border-top: 4px solid var(--teal); }
+.metric-card:nth-child(2) { border-top: 4px solid var(--blue); }
+.metric-card:nth-child(3) { border-top: 4px solid var(--gold); }
+.metric-card:nth-child(4) { border-top: 4px solid var(--coral); }
+
+.metric-value {
+  margin: 0 0 0.6rem;
+  color: var(--ink);
+  font-size: clamp(1.25rem, 2.2vw, 1.6rem);
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+}
+
+.metric-label {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+.footnote {
+  margin: 0.9rem 0 0;
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+}
+
+.timeline {
+  position: relative;
+  display: grid;
+  gap: 1.35rem;
+  padding-left: 1.6rem;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  left: 0.35rem;
+  width: 2px;
+  border-radius: 2px;
+  background: linear-gradient(180deg, var(--blue), var(--teal) 40%, var(--gold) 75%, var(--coral));
+  opacity: 0.6;
+}
+
+.role-card {
+  position: relative;
+  padding: 1.45rem;
+  background: var(--bg-elevated);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow);
+}
+
+.role-card::before {
+  content: "";
+  position: absolute;
+  top: 1.9rem;
+  left: calc(-1.6rem - 1px);
+  width: 0.9rem;
+  height: 0.9rem;
+  border-radius: 50%;
+  border: 3px solid var(--bg);
+  background: var(--teal);
+}
+
+.role-card--net::before {
+  background: var(--blue);
+}
+
+.role-card--net {
+  background: linear-gradient(160deg, var(--blue-soft), var(--bg-elevated) 55%);
+}
+
+.role-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.75rem 1.5rem;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.role-head h3 {
+  margin-bottom: 0.35rem;
+}
+
+.role-org {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+.role-dates {
+  margin: 0;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--surface);
+  color: var(--ink);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.role-card .simple-list {
+  margin-bottom: 1rem;
+}
+
+.role-card .project-tags {
+  margin-top: 0.5rem;
+}
+
+.media-pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.42fr);
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.media-pair .project-media img {
+  max-height: none;
+  object-fit: contain;
+}
+
+.step-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.step-card {
+  padding: 1.35rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-xl);
+  background: var(--bg-elevated);
+  box-shadow: var(--shadow);
+}
+
+.step-num {
+  margin: 0 0 0.9rem;
+  color: var(--blue);
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1040px) {
+  .metric-grid,
+  .step-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .metric-grid,
+  .step-grid,
+  .media-pair {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline {
+    padding-left: 1.1rem;
+  }
+
+  .role-card {
+    padding: 1.2rem;
+  }
+
+  .role-card::before {
+    left: calc(-1.1rem - 1px);
+    width: 0.75rem;
+    height: 0.75rem;
+  }
+
+  .project-media--phone {
+    max-width: 16rem;
+  }
+}
+
+.site-nav a.button--dark {
+  color: var(--bg);
+}
+
+.link-row {
+  margin-top: 1rem;
+}
